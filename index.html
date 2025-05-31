@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doraemon Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Quicksand:wght@400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', Arial, sans-serif;
+            background: linear-gradient(135deg, #aee9fc 0%, #f5fafd 100%);
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+
+        .navbar {
+            background-color: #2196f3;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: 600;
+            font-size: 18px;
+            transition: color 0.2s;
+        }
+
+        .navbar a:hover {
+            color: #ffd600;
+        }
+
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 6px solid #2196f3;
+            background: #fff;
+            object-fit: cover;
+            box-shadow: 0 4px 16px rgba(33, 150, 243, 0.15);
+        }
+
+        .profile-name {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-size: 2.2rem;
+            color: #2196f3;
+            margin: 18px 0 6px 0;
+        }
+
+        .profile-desc {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 18px;
+            text-align: center;
+            max-width: 400px;
+        }
+
+        .section {
+            background: #fff;
+            margin: 30px auto;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px rgba(33, 150, 243, 0.08);
+            max-width: 700px;
+            padding: 28px 32px;
+        }
+
+        .section h2 {
+            color: #2196f3;
+            margin-bottom: 18px;
+            font-family: 'Montserrat', Arial, sans-serif;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+
+        .project-card {
+            background: #e1f5fe;
+            border-radius: 12px;
+            padding: 18px;
+            flex: 1 1 220px;
+            min-width: 200px;
+            box-shadow: 0 2px 8px rgba(33, 150, 243, 0.07);
+        }
+
+        .project-card h3 {
+            color: #1976d2;
+            margin-top: 0;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 18px 0;
+            background: #2196f3;
+            color: #fff;
+            margin-top: 40px;
+            border-radius: 0 0 16px 16px;
+        }
+
+        /* Doraemon accent */
+        .doraemon-accent {
+            display: flex;
+            justify-content: center;
+            margin-top: 18px;
+        }
+
+        .doraemon-bell {
+            width: 38px;
+            height: 38px;
+            background: #ffd600;
+            border-radius: 50%;
+            border: 3px solid #ff9800;
+            position: relative;
+            margin: 0 8px;
+        }
+
+        .doraemon-bell::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 60%;
+            transform: translate(-50%, 0);
+            width: 14px;
+            height: 6px;
+            background: #ff9800;
+            border-radius: 0 0 8px 8px;
+        }
+
+        @media (max-width: 600px) {
+            .section {
+                padding: 18px 8px;
+            }
+
+            .profile-desc {
+                font-size: 1rem;
+            }
+
+            .projects {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="profile" id="home">
+        <img src="img/doraemon.jpeg" alt="doraemon" class="profile-img">
+        <div class="profile-name">Dave Doraemon</div>
+        <div class="profile-desc">Hi! I'm Dave, a web developer who loves gadgets and helping friends, just like
+            Doraemon. Welcome to my portfolio!</div>
+        <div class="doraemon-accent">
+            <div class="doraemon-bell"></div>
+        </div>
+    </div>
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+        <p>
+            I am a futuristic robotic cat from the 22nd century, always ready to help Nobita and friends with my amazing
+            gadgets and creative solutions. Inspired by Doraemon’s spirit, I love inventing fun and useful web
+            applications that make life easier and bring smiles to everyone!
+        </p>
+        </p>
+    </div>
+    <div class="section" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <div class="skill">Time Travel</div>
+            <div class="skill">Magic Pouch</div>
+            <div class="skill">Bamboo Propeller</div>
+        </div>
+    </div>
+    <div class="section" id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>Bamboo Copter App</h3>
+                <p>A simple web app that lets you "fly" around the page, inspired by Doraemon's bamboo copter!</p>
+            </div>
+            <div class="project-card">
+                <h3>Anywhere Door</h3>
+                <p>A portal website that helps you jump to your favorite links instantly, just like Doraemon's door.</p>
+            </div>
+            <div class="project-card">
+                <h3>Time Machine Blog</h3>
+                <p>A blog platform to record your memories and revisit them anytime, inspired by Doraemon's time
+                    machine.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:nobi.doraemon@example.com" style="color:#1976d2;">nobi.doraemon@example.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/doraemon" target="_blank" style="color:#1976d2;">@doraemon</a></p>
+    </div>
+    <div class="footer">
+        &copy; 2025 Dave. Inspired by Doraemon.
+    </div>
+</body>
+
+</html>
